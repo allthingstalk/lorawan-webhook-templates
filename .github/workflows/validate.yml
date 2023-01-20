@@ -9,10 +9,10 @@ on:
 jobs:
   validate:
     name: Validate Webhook Templates
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-22.04
     steps:
     - name: Check out code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
     - name: Initialize tool binary cache
       id: tools-cache
       uses: actions/cache@v2
